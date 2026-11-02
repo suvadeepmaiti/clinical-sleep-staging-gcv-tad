@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# iSLEEPS (ischaemic stroke, 99 patients): the runs reported in the paper, in order.
+# iSLEEPS (ischaemic stroke, 100patients): the runs reported in the paper, in order.
 # 1) 10-fold patient-wise CV with all labels: SleepGPT-BiLSTM teacher (one seed) + causal CE students.
 # 2) 25% of the training patients labelled: CE, KD and G_cv-TAD students; paired per-patient tests.
 # Needs data/cache/isleeps/psg4_100hz (datasets/isleeps/preprocessing) and the SleepGPT checkpoint (third_party/).
