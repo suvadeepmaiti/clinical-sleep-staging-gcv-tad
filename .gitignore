@@ -1,0 +1,13 @@
+data/
+results/
+third_party/SleepGPT/
+paper/figs/
+paper/tables/
+paper/numbers.tex
+__pycache__/
+*.pt
+*.ckpt
+*.npz
+*.npy
+*.log
+.run.lock

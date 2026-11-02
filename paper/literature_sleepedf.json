@@ -1,0 +1,17 @@
+{
+ "_note": "Published Sleep-EDF-20 (2013 Sleep Cassette, 20 subjects, +-30 min of wake around sleep, R&K with N3+N4 merged) results, values as reported (% for acc/mf1, fraction for kappa), pooled over all test epochs; subject-wise 20-fold CV. Checked 2026-11-02.",
+ "rows": [
+  {"name": "DeepSleepNet", "channels": "1", "input": "Fpz-Cz", "protocol": "20-fold subject-wise",
+   "params": null, "acc": 82.0, "mf1": 76.9, "kappa": 0.76,
+   "source": "https://arxiv.org/pdf/2007.05492 (XSleepNet Table, SleepEDF-20 +-30 min block)", "cite": "supratak2017deepsleepnet"},
+  {"name": "AttnSleep", "channels": "1", "input": "Fpz-Cz", "protocol": "20-fold subject-wise, 42,308 epochs",
+   "params": null, "acc": 84.4, "mf1": 78.1, "kappa": 0.79,
+   "source": "https://personal.ntu.edu.sg/ctguan/Publications/2021_Emad_IEEE_TNSRE.pdf (Table V)", "cite": "eldele2021attnsleep"},
+  {"name": "SeqSleepNet", "channels": "2", "input": "Fpz-Cz + EOG", "protocol": "20-fold subject-wise; values reported in XSleepNet",
+   "params": null, "acc": 86.0, "mf1": 79.7, "kappa": 0.809,
+   "source": "https://arxiv.org/pdf/2007.05492 (ARNN+RNN = SeqSleepNet, EEG-EOG)", "cite": "phan2022xsleepnet"},
+  {"name": "XSleepNet2", "channels": "2", "input": "Fpz-Cz + EOG", "protocol": "20-fold subject-wise",
+   "params": null, "acc": 86.4, "mf1": 80.9, "kappa": 0.813,
+   "source": "https://arxiv.org/pdf/2007.05492 (EEG-EOG)", "cite": "phan2022xsleepnet"}
+ ]
+}

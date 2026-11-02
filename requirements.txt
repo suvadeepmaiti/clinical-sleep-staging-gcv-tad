@@ -1,0 +1,9 @@
+# Versions used for the published runs (Python 3.11, CUDA 12.1). A CUDA GPU is needed for training.
+torch==2.5.1
+numpy==2.3.4
+scipy==1.16.2
+scikit-learn==1.7.2
+matplotlib==3.10.7
+pyEDFlib==0.1.42
+# only for tests/check_sleepgpt_port.py (compares the port with the original SleepGPT code)
+einops

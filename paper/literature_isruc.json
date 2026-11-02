@@ -1,0 +1,119 @@
+{
+  "_note": "Published ISRUC-S1 (subgroup I, 100 subjects) results copied from the cited papers (checked 2026-10-31). acc / mf1 in %, kappa as fraction; null = not reported. Protocols, channels and averaging differ; see 'protocol'. 'cite' = refs.bib key (null: shown in the deck only).",
+  "single_channel": [
+    {
+      "name": "LGFNet",
+      "ref": "Wang et al., arXiv 2607.25197 (2026, preprint)",
+      "channel": "C4-A1",
+      "protocol": "subject-wise 10-fold",
+      "context": "sequence-to-sequence + Viterbi smoothing",
+      "params": 16600000,
+      "acc": 85.7,
+      "mf1": 83.5,
+      "kappa": 0.814,
+      "source": "https://arxiv.org/html/2607.25197v2",
+      "cite": "wang2026lgfnet"
+    },
+    {
+      "name": "1D-ResNet-SE-LSTM",
+      "ref": "Li & Gao, PeerJ Comput. Sci. 2023",
+      "channel": "F3-A2",
+      "protocol": "one random 90/10 split",
+      "context": "15-epoch sequences",
+      "params": 280000,
+      "acc": 81.97,
+      "mf1": 79.94,
+      "kappa": 0.766,
+      "source": "https://www.biorxiv.org/content/10.1101/2023.03.29.534672.full",
+      "cite": "li2023resnetse"
+    },
+    {
+      "name": "NeuroNet",
+      "ref": "Lee et al., arXiv 2404.17585 (2024)",
+      "channel": "C4-A1",
+      "protocol": "10-fold, self-supervised + fine-tuning",
+      "context": "20 epochs (Mamba)",
+      "params": null,
+      "acc": 77.05,
+      "mf1": 73.45,
+      "kappa": null,
+      "source": "https://arxiv.org/html/2404.17585v1",
+      "cite": "lee2024neuronet"
+    }
+  ],
+  "multi_channel": [
+    {
+      "name": "MSSC-BiMamba",
+      "ref": "arXiv 2405.20142 (2024)",
+      "channel": "10 ch. (6 EEG, 2 EOG, EMG, ECG)",
+      "protocol": "25-fold, 50 subjects",
+      "params": 470000,
+      "params_note": "0.47M as reported for ISRUC-S3",
+      "acc": 83.0,
+      "mf1": 80.1,
+      "kappa": 0.773,
+      "source": "https://arxiv.org/html/2405.20142",
+      "cite": "zhang2024mssc"
+    },
+    {
+      "name": "JK-STGCN",
+      "ref": "Ji et al., 2022",
+      "channel": "multi-channel PSG",
+      "protocol": "as reported",
+      "params": null,
+      "acc": 82.0,
+      "mf1": 79.8,
+      "kappa": 0.767,
+      "source": "https://arxiv.org/html/2405.20142",
+      "cite": "ji2022jkstgcn"
+    },
+    {
+      "name": "MixSleepNet",
+      "ref": "as reported in MSSC-BiMamba Table 6 and LGFNet Table III",
+      "channel": "multi-channel PSG",
+      "protocol": "as reported",
+      "params": null,
+      "acc": 81.3,
+      "mf1": 78.7,
+      "kappa": 0.757,
+      "source": "https://arxiv.org/html/2405.20142",
+      "cite": null
+    },
+    {
+      "name": "GraphSleepNet",
+      "ref": "Jia et al., IJCAI 2020 (as reported in MSSC-BiMamba Table 6)",
+      "channel": "multi-channel PSG",
+      "protocol": "as reported",
+      "params": null,
+      "acc": 78.0,
+      "mf1": 75.1,
+      "kappa": 0.715,
+      "source": "https://arxiv.org/html/2405.20142",
+      "cite": null
+    },
+    {
+      "name": "SleepSMC (all 9 ch.)",
+      "ref": "Ma et al., ICLR 2025, Table 1",
+      "channel": "6 EEG + 2 EOG + EMG",
+      "protocol": "subject-wise 5-fold",
+      "params": null,
+      "acc": 77.1,
+      "mf1": 74.62,
+      "kappa": 0.7018,
+      "source": "https://proceedings.iclr.cc/paper_files/paper/2025/file/3ca317b75ddc9dda494185926ee1c025-Paper-Conference.pdf",
+      "cite": "ma2025sleepsmc"
+    },
+    {
+      "name": "SleepSMC (6-ch. EEG at test)",
+      "ref": "Ma et al., ICLR 2025, Table 7",
+      "channel": "6 EEG (trained with EOG, EMG)",
+      "protocol": "subject-wise 5-fold",
+      "params": null,
+      "acc": 73.28,
+      "mf1": 69.59,
+      "kappa": 0.6536,
+      "source": "https://proceedings.iclr.cc/paper_files/paper/2025/file/3ca317b75ddc9dda494185926ee1c025-Paper-Conference.pdf",
+      "cite": "ma2025sleepsmc"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+ "_note": "Published iSLEEPS sleep-staging results (values as reported; % for acc/mf1, fraction for kappa). Protocols differ from ours (folds, recordings).",
+ "rows": [
+  {"name": "SE-ResNet-BiLSTM", "channels": "1", "protocol": "10-fold, 100 patients; patient-wise split not stated",
+   "params": null, "acc": 74.7, "mf1": 67.7, "kappa": 0.64,
+   "source": "https://arxiv.org/html/2603.23582v2 (Table 1)", "cite": "bose2026generalisation"},
+  {"name": "SleepStageNet", "channels": "1", "protocol": "10-fold subject-independent, 95 recordings; C4-only variant",
+   "params": 1060421, "acc": 71.55, "mf1": 63.90, "kappa": 0.600,
+   "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13511403/", "cite": "alhazmi2026sleepstagenet"},
+  {"name": "SleepStageNet", "channels": "5", "protocol": "10-fold subject-independent, 95 recordings; C3, C4, 2 EOG, EMG",
+   "params": 1075269, "acc": 73.91, "mf1": 67.29, "kappa": 0.634,
+   "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13511403/", "cite": "alhazmi2026sleepstagenet"},
+  {"name": "MM-Net", "channels": "15", "protocol": "10-fold patient-independent, 99 patients; single model; 7 neural + 8 cardiorespiratory channels",
+   "params": 2850000, "params_note": "plus a separately trained 5.8M LaBraM encoder",
+   "acc": 75.6, "mf1": 66.1, "kappa": 0.647,
+   "source": "https://arxiv.org/html/2610.36583", "cite": "suva2026mmnet"}
+ ]
+}
